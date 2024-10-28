@@ -44,6 +44,7 @@ app.UseHttpsRedirection();
 void StartApplication(string appPath)
 {
     // Start the application
+    Console.WriteLine($"{DateTime.Now.ToString("s")} - starting {appPath}");
     Process.Start(appPath);
 }
 
@@ -52,6 +53,7 @@ void StopApplication(string appName)
     // Stop the application by killing the process
     foreach (var process in Process.GetProcessesByName(appName))
     {
+        Console.WriteLine($"{DateTime.Now.ToString("s")} - stopping {appName}");
         process.Kill();
     }
 }
