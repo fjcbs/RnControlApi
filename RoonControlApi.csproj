@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <!-- <PropertyGroup> -->
+    <!-- <TargetFramework>net8.0</TargetFramework> -->
+    <!-- <Nullable>enable</Nullable> -->
+    <!-- <ImplicitUsings>enable</ImplicitUsings> -->
+  <!-- </PropertyGroup> -->
+
+	<PropertyGroup>
+		<TargetFramework>net8.0-windows</TargetFramework> <!-- or your target framework -->
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<RuntimeIdentifier>win-x64</RuntimeIdentifier> <!-- or your target platform -->
+		<PublishSingleFile>true</PublishSingleFile>
+		<SelfContained>true</SelfContained>
+		<PublishTrimmed>true</PublishTrimmed>
+		<NoWin32Manifest>true</NoWin32Manifest>
+		<OutputType>Exe</OutputType>
+		<ApplicationIcon>roonrestart.ico</ApplicationIcon>
+		<ProduceReferenceAssembly>False</ProduceReferenceAssembly>
+		<GenerateDocumentationFile>False</GenerateDocumentationFile>
+		<SignAssembly>False</SignAssembly> <!-- Optional: Trim unused libraries -->
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	  <Optimize>False</Optimize>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Content Include="roonrestart.ico" />
+	</ItemGroup>
+
+	<!-- <ItemGroup> -->
+		<!-- <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.10" /> -->
+		<!-- <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" /> -->
+	<!-- </ItemGroup> -->
+
+  <!-- <ItemGroup> -->
+    <!-- <RuntimeHostConfigurationOption Include="System.Text.Json.Serialization.EnableSourceGenReflectionFallback" Value="true" /> -->
+  <!-- </ItemGroup> -->
+</Project>

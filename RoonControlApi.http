@@ -1,0 +1,31 @@
+@RoonControlApi_HostAddress = http://localhost:5214
+
+ GET {{RoonControlApi_HostAddress}}/startCore
+ Accept: application/json
+
+###
+
+ GET {{RoonControlApi_HostAddress}}/stopCore
+ Accept: application/json
+
+###
+
+ GET {{RoonControlApi_HostAddress}}/restartCore
+ Accept: application/json
+
+###
+
+ GET {{RoonControlApi_HostAddress}}/startServer
+ Accept: application/json
+
+###
+
+ GET {{RoonControlApi_HostAddress}}/stopServer
+ Accept: application/json
+
+###
+
+ GET {{RoonControlApi_HostAddress}}/restartServer
+ Accept: application/json
+
+###
