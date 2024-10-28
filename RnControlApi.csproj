@@ -27,7 +27,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <Content Include="roonrestart.ico" />
+	  <Content Include="rnrestart.ico" />
 	</ItemGroup>
 
 	<!-- <ItemGroup> -->
