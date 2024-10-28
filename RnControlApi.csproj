@@ -16,7 +16,7 @@
 		<PublishTrimmed>true</PublishTrimmed>
 		<NoWin32Manifest>true</NoWin32Manifest>
 		<OutputType>Exe</OutputType>
-		<ApplicationIcon>roonrestart.ico</ApplicationIcon>
+		<ApplicationIcon>rnrestart.ico</ApplicationIcon>
 		<ProduceReferenceAssembly>False</ProduceReferenceAssembly>
 		<GenerateDocumentationFile>False</GenerateDocumentationFile>
 		<SignAssembly>False</SignAssembly> <!-- Optional: Trim unused libraries -->

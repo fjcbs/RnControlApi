@@ -9,12 +9,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 
 // Load configuration values
-string roonCoreAppName = builder.Configuration["AppSettings:RoonCoreAppName"];
-string roonCoreAppPath = builder.Configuration["AppSettings:RoonCoreAppPath"];
-int roonCoreRestartDelay = int.Parse(builder.Configuration["AppSettings:RoonCoreRestartDelay"]);
-string roonServerAppName = builder.Configuration["AppSettings:RoonServerAppName"];
-string roonServerAppPath = builder.Configuration["AppSettings:RoonServerAppPath"];
-int roonServerRestartDelay = int.Parse(builder.Configuration["AppSettings:RoonServerRestartDelay"]);
+string roonCoreAppName = builder.Configuration["AppSettings:coreAppName"];
+string roonCoreAppPath = builder.Configuration["AppSettings:coreAppPath"];
+int roonCoreRestartDelay = int.Parse(builder.Configuration["AppSettings:coreRestartDelay"]);
+string roonServerAppName = builder.Configuration["AppSettings:serverAppName"];
+string roonServerAppPath = builder.Configuration["AppSettings:serverAppPath"];
+int roonServerRestartDelay = int.Parse(builder.Configuration["AppSettings:serverRestartDelay"]);
 
 // Configure Kestrel to use the port from appsettings.json
 builder.WebHost.ConfigureKestrel(serverOptions =>
