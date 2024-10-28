@@ -55,6 +55,8 @@ To restart Roon Core simply call:
 http://myRoonStreamer:5214/restartCore
 ```
 
+Note: the restart commands are the same as a "stop" followed by a "start" with a 5 second delay between stop and start - this delay can also be adjusted in the `appsettings.json` file.
+
 #### Other allowed commands ####
 (replace `myRoonStreamer` by your machine name ou IP address)
 
